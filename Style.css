@@ -1,0 +1,72 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cardarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    width: 200px;
+    height: 250px;
+    margin: 30px;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#img-zoom {
+    position: absolute;
+    height: 100%;
+    margin-left: -50px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+#img-zoom:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#img-pan {
+    position: absolute;
+    height: 120%;
+    left: 0;
+    object-fit: cover;
+    transition: 2s;
+}
+
+#img-pan:hover {
+    left: -150px;
+}
+
+#img-zoom-js {
+    position: absolute;
+    height: 100%;
+    margin-left: -50px;
+    object-fit: cover;
+}
+
+#img-pan-js {
+    position: absolute;
+    height: 120%;
+    left: 0;
+    object-fit: cover;
+}
